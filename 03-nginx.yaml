@@ -3,6 +3,6 @@
   become: yes # take sudo access
   tasks:
    - name: install nginx
-     ansible.bultin.package: # heterogeneous module that can work for all destros
+     ansible.builtin.package: # heterogeneous module that can work for all destros
       name: nginx
       state: present
