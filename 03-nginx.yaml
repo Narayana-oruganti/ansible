@@ -6,3 +6,8 @@
      ansible.builtin.package: # heterogeneous module that can work for all destros
       name: nginx
       state: present
+
+   - name: run
+     ansible.builtin.service:
+      name: nginx
+      state: started   
